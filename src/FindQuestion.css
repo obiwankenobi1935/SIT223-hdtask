@@ -1,0 +1,70 @@
+.question-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.add-question-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.add-question-form input,
+.add-question-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.question-list {
+  margin-top: 20px;
+}
+
+.question-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative; /* Added for absolute positioning of details */
+  overflow: hidden; /* Added to prevent overflow of details */
+}
+
+.question-card:hover {
+  background-color: #f9f9f9;
+}
+
+.question-details {
+  display: none; /* Hide by default */
+  margin-top: 10px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.question-card:hover .question-details {
+  display: block; /* Show on hover */
+}
+
+.question-date {
+  font-size: 0.9em;
+  color: #555;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #5ecaf2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5ecaf2;
+}

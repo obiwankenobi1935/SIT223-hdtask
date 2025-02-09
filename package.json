@@ -52,6 +52,7 @@
     ]
   },
   "devDependencies": {
-    "jest-junit": "^16.0.0"
+    "jest-junit": "^16.0.0",
+    "netlify-cli": "^18.0.4"
   }
 }

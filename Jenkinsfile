@@ -18,6 +18,11 @@ pipeline {
                     // Run tests using your testing framework (e.g., Jest)
                     powershell 'npm test'
                 }
+                post {
+                always {
+                    junit '**/test-reports/jest-junit.xml'  // Point to the JUnit report file
+                }
+            }
             }
         }
         stage('Deploy') {

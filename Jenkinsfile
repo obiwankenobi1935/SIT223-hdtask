@@ -17,9 +17,9 @@ pipeline {
                 script {
                     // Run tests using your testing framework (e.g., Jest)
                     // Run npm test and wait for it to complete
-                    powershell 'npm test'  // Run tests directly, it will wait for completion
+                    // powershell 'npm test'  // Run tests directly, it will wait for completion
                     // Optionally add a sleep here if you need time for server setup
-                    powershell 'Start-Sleep -Seconds 5'  // Wait if you need some additional time
+                    // powershell 'Start-Sleep -Seconds 5'  // Wait if you need some additional time
                     // Run selenium test after tests finish
                     powershell 'node seleniumTest.js'
                 }

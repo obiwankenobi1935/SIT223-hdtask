@@ -16,7 +16,7 @@ pipeline {
                 echo 'Running tests...'
                 script {
                     // Run tests using your testing framework (e.g., Jest)
-                    powershell 'Start-Process -NoNewWindow -FilePath "npm" -ArgumentList "start"'
+                    powershell 'Start-Process -NoNewWindow -FilePath "npm" -ArgumentList "test"'
                     powershell 'Start-Sleep -Seconds 10' // Wait for server to star
                     powershell 'node seleniumTest.js'
                 }

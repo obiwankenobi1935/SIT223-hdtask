@@ -21,6 +21,8 @@ pipeline {
                     // Optionally add a sleep here if you need time for server setup
                     // powershell 'Start-Sleep -Seconds 5'  // Wait if you need some additional time
                     // Run selenium test after tests finish
+                    powershell 'Start-Process -NoNewWindow -FilePath "npm" -ArgumentList "start"'
+                    powershell 'npx wait-on http://localhost:3000'
                     powershell 'node seleniumTest.js'
                 }
             }
